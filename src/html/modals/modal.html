@@ -1,0 +1,40 @@
+<div class="modal modal-contact" id="modal-contact">
+    <div class="modal__inner">
+        <button class="modal__close" modal-close type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.63623 5.63574L18.3642 18.3637" stroke="#24A5E0" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M5.63623 18.3643L18.3642 5.63634" stroke="#24A5E0" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+        </button>
+
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <div class="title modal__title">
+                    Свяжитесь с нами
+                </div>
+                <form action="" class="modal__form">
+                    <div class="modal__form-input">
+                        <span class="modal__form-icon">
+                            <img src="img/icons/user.svg" alt="">
+                        </span>
+                        <input type="text" placeholder="Имя" name="contact-name">
+                    </div>
+                    <div class="modal__form-input">
+                        <span class="modal__form-icon">
+                            <img src="img/icons/phone.svg" alt="">
+                        </span>
+                        <input type="tel" placeholder="Номер телефона" name="contact-tel">
+                    </div>
+                    @@include('../components/blue-btn.html', {
+                    "text": "Связаться",
+                    "class": "modal__form-submit",
+                    "type": "submit"
+                    })
+                </form>
+            </div>
+            <div class="modal__logo">
+                <img src="img/logo/ukol2.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

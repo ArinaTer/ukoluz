@@ -1,0 +1,51 @@
+.preloader {
+    $base-line-height: 6rem;
+    $spin-duration: 1s;
+    background-color: var(--light-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 102;
+    @include flex();
+
+    &-circle {
+        border-radius: 50%;
+        width: $base-line-height;
+        height: $base-line-height;
+        border: 1rem solid var(--dark-color);
+        border-top-color: rgba(6, 33, 38, 0.2);
+        animation: spin $spin-duration infinite linear;
+        margin: 0 auto;
+    }
+
+    &-text {
+        font-weight: 600;
+        font-size: 2.4rem;
+        line-height: 112%;
+        color: var(--dark-color);
+        opacity: 0.3;
+        margin-top: 2.4rem;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in 2s;
+
+    &.remove {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

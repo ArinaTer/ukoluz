@@ -1,0 +1,129 @@
+.reviews {
+  margin-top: 9.6rem;
+
+  @include _576-max {
+    margin-top: 54px;
+  }
+  // .reviews__title
+
+  &__title {
+    @include _576-max {
+      font-size: 24px;
+    }
+  }
+
+  // .reviews__cards
+
+  &__cards {
+    margin-top: 4.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    @include _767-max {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include _576-max {
+      margin-top: 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+  }
+
+  // .reviews__card
+
+  &__card {
+    border: 0.1rem solid rgba(6, 33, 38, 0.1);
+    border-radius: 3rem;
+    background-color: #fff;
+    padding: 2.9rem 3.1rem 6.4rem;
+    @include _576-max {
+      border: 1px solid rgba(6, 33, 38, 0.1);
+      border-radius: 30px;
+      padding: 29px 33px 33px 31px;
+    }
+    &.hidden {
+      display: none;
+    }
+    &.visible {
+      display: block;
+    }
+  }
+
+  // .reviews__card-title
+
+  &__card-title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: rgba(6, 33, 38, 0.8);
+    @include _576-max {
+      font-size: 16px;
+    }
+  }
+
+  // .reviews__card-date
+
+  &__card-date {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 112%;
+    color: rgba(6, 33, 38, 0.3);
+    @include _576-max {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  // .reviews__card-rating
+
+  &__card-rating {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    @include _576-max {
+      margin-top: 12px;
+      gap: 5px;
+    }
+    label {
+      color: rgba(6, 33, 38, 0.1);
+      font-size: 1.7rem;
+      @include _576-max {
+        font-size: 17px;
+      }
+    }
+  }
+
+  // .reviews__card-text
+
+  &__card-text {
+    margin-top: 4.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 112%;
+    color: rgba(6, 33, 38, 0.6);
+    @include _576-max {
+      margin-top: 45px;
+      font-size: 16px;
+    }
+  }
+
+  // .reviews__showmore-btn
+
+  &__showmore-btn {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin: 3.2rem auto 0;
+    @include _576-max {
+      margin: 32px auto 0;
+    }
+    img {
+      display: none;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+}

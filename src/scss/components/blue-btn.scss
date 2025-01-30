@@ -1,0 +1,31 @@
+.blue-btn {
+    padding: 1.6rem 3.2rem;
+    background-color: var(--blue-color);
+    border-radius: 5.5rem;
+    @include flex;
+    gap: 20px;
+
+    color: var(--light-color);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 173%;
+
+    @include _2880-min {
+        font-size: 1.6rem;
+        padding: 1.4rem 2.8rem;
+
+    }
+
+    img {
+        transition: 0.3s ease;
+        width: 2rem;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            img {
+                transform: translateX(5px);
+            }
+        }
+    }
+}

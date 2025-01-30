@@ -1,0 +1,57 @@
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact__inner">
+            <div class="contact__info">
+                <h2 class="contact__title title">Свяжитесь с нами</h2>
+                <p class="contact__text text">
+                    Если у вас возникнут вопросы или проблемы, наша команда всегда готова помочь разобраться в ситуации и
+                    найти решение.
+                </p>
+                <p class="contact__text text">
+                    По всем вопросам и пожеланиям, пожалуйста обращайтесь по указанной ниже электронной почте:
+                </p>
+                <a href="#" class="contact__email">
+                    <img class="contact__email-icon" src="img/icons/email-icon.svg" alt="Email">
+                    <span class="contact__email-text">help@ukol.uz</span>
+                    
+                </a>
+            </div>
+    
+            <form class="contact-form">
+                <div class="contact-form__group">
+                    <span class="contact-form__icon">
+                        <img src="img/icons/form-user.svg" alt="User">
+                    </span>
+                    <input type="text" class="contact-form__input" name="contact-name" placeholder="Имя">
+                </div>
+    
+                <div class="contact-form__group">
+                    <span class="contact-form__icon">
+                        <img src="img/icons/form-mail.svg" alt="Email">
+                    </span>
+                    <input type="email" class="contact-form__input" name="contact-email" placeholder="Ваша почта">
+                </div>
+    
+                <div class="contact-form__group">
+                    <span class="contact-form__icon">
+                        <img src="img/icons/form-phone.svg" alt="Phone">
+                    </span>
+                    <input type="tel" class="contact-form__input" name="contact-tel" placeholder="Номер телефона">
+                </div>
+    
+                <div class="contact-form__actions">
+                    @@include('../components/blue-btn.html', { "text": "Связаться", "class": "contact-form__btn", "type": "submit" })
+    
+                    <div class="contact-form__social">
+                        <a href="#" class="contact-form__social-link">
+                            <img src="img/icons/telegram-icon.svg" alt="Telegram">
+                        </a>
+                        <a href="#" class="contact-form__social-link">
+                            <img src="img/icons/phone-icon.svg" alt="Phone">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

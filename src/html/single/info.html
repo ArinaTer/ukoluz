@@ -1,0 +1,103 @@
+<section class="info">
+  <div class="info__container container">
+    <h2 class="info__title title">Информация о докторе</h2>
+    <div class="info__wrap">
+      <div class="info__left">
+        <div class="info__left-wrapper">
+          <div class="info__left-top">
+            <div class="info__left-img">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mona_Lisa-restored.jpg/1200px-Mona_Lisa-restored.jpg"
+                alt=""
+              />
+            </div>
+            <p class="info__left-title mini-title">Джамиля Халибаева</p>
+            <p class="info__left-text text text">Домохозяйка</p>
+
+            <div class="info__left-list">
+              <div class="info__left-item left-item">
+                <p class="left-item__text">Стаж работы</p>
+                <div class="left-item__exp exp">
+                  <img src="../../img/icons/calendar.svg" alt="" />
+                  <p>4 года</p>
+                </div>
+              </div>
+              <div class="info__left-item left-item">
+                <p class="left-item__text">Рейтинг</p>
+
+                <div class="left-item__rating rating">
+                  <img src="../../img/icons/star.svg" alt="" />
+                  <p>4.5<span>/5</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info__left-bot info-bot">
+            <p class="info-bot__title mini-title">
+              Свяжитесь <br />
+              со специалистом
+            </p>
+            @@include('../components/blue-btn.html', {"text": "Показать телефон","class": "info-bot__btn"})
+          </div>
+        </div>
+      </div>
+      <div class="info__right">
+        <div class="info__right-wrapper">
+          <p class="info__right-title">Обo мне</p>
+          <p class="info__right-text">
+            Curabitur lectus dolor, ullamcorper eu velit eu, sodales dictum elit. Ut dolor nisi, consequat sed luctus
+            ut, aliquam sit amet nisi. Suspendisse nibh velit, iaculis sed nulla non, imperdiet euismod orci.
+          </p>
+          <div class="info__right-services info-services">
+            <div class="info-services__title">
+              <img src="../../img/single/service.svg" alt="" />
+              <p>Оказываемые услуги</p>
+            </div>
+            <div class="info-services__list">
+              <div class="info-services__item">
+                <p class="info-services__left">Внутримышечный укол</p>
+                <p class="info-services__right">30.000 сум</p>
+              </div>
+              <div class="info-services__item">
+                <p class="info-services__left">Внутривенный</p>
+                <p class="info-services__right">30.000 сум</p>
+              </div>
+              <div class="info-services__item">
+                <p class="info-services__left">Капельницы</p>
+                <p class="info-services__right">50.000 сум</p>
+              </div>
+              <div class="info-services__item">
+                <p class="info-services__left">Катетер в вену</p>
+                <p class="info-services__right">обговаривается лично</p>
+              </div>
+            </div>
+          </div>
+          <div class="info__right-districts info-districts">
+            <div class="info-districts__title">
+              <img src="../../img/single/marker.svg" alt="" />
+              <p>Районы, в которых специалист доступен</p>
+            </div>
+            <ul class="info-districts__list">
+              <div class="info-districts__wrapper">
+                <li class="info-districts__item">Алмазарский район</li>
+                <li class="info-districts__item">Бектемирский район</li>
+                <li class="info-districts__item">Мирабадский район</li>
+                <li class="info-districts__item">Мирзо-Улугбекский район</li>
+                <li class="info-districts__item">Сергелийский район</li>
+              </div>
+              <div class="info-districts__wrapper">
+                <li class="info-districts__item">Алмазарский район</li>
+                <li class="info-districts__item">Бектемирский район</li>
+                <li class="info-districts__item">Мирабадский район</li>
+                <li class="info-districts__item">Мирзо-Улугбекский район</li>
+                <li class="info-districts__item">Сергелийский район</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        @@include('./reviews.html') @@include('./recall.html')
+      </div>
+    </div>
+  </div>
+</section>

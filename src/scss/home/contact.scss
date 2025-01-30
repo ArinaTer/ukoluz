@@ -1,0 +1,245 @@
+.contact {
+  padding: 14rem;
+  background: var(--light-color);
+  @include _767-max {
+    padding: 110px 0 67px;
+  }
+  .container {
+  }
+
+  //contact__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    @include _767-max {
+      flex-direction: column;
+    }
+  }
+
+  // .contact__info
+  &__info {
+    max-width: 62.7rem;
+    width: 100%;
+    padding-right: 11.3rem;
+    @include _1399-max {
+      padding-right: 4rem;
+    }
+
+    @include _991-max {
+      padding-right: 40px;
+      max-width: 100%;
+    }
+
+    @include _767-max {
+      padding-right: 0;
+      padding-bottom: 32px;
+    }
+  }
+
+  // .contact__title
+  &__title {
+    margin-bottom: 5.2rem;
+    @include _767-max {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .contact__text
+  &__text {
+    margin-bottom: 3.2rem;
+    @include _767-max {
+      margin-bottom: 28px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 2.3rem;
+      @include _767-max {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  // .contact__email
+  &__email {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    @include _767-max {
+      gap: 12px;
+    }
+  }
+
+  // .contact__email-icon
+  &__email-icon {
+    width: 3rem;
+    height: 3rem;
+    @include _767-max {
+      width: 30px;
+      height: 30px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .contact__email-text
+  &__email-text {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 173%;
+    text-decoration-line: underline;
+    color: rgba(6, 33, 38, 0.8);
+    @include _767-max {
+      font-size: 16px;
+    }
+  }
+
+  &-form {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+    width: 100%;
+    position: relative;
+    @include _1399-max {
+      padding-left: 4rem;
+      padding-right: 0;
+    }
+
+    @include _991-max {
+      padding-left: 30px;
+      max-width: 100%;
+    }
+
+    @include _767-max {
+      padding-left: 0;
+      padding-top: 32px;
+    }
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(6, 33, 38, 0.1);
+      @include _767-max {
+        width: 100%;
+        height: 1px;
+      }
+    }
+
+    // .contact-form__group
+    &__group {
+      width: 100%;
+      background: #FCFCFC;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 3.2rem;
+
+      @include _767-max {
+        margin-bottom: 32px;
+        padding: 15px 20px;
+        gap: 12px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    // .contact-form__icon
+    &__icon {
+      width: 2rem;
+      height: 2rem;
+      @include _767-max {
+        width: 20px;
+        height: 20px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    // .contact-form__input
+    &__input {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 112.5%;
+      background: #FCFCFC;
+      width: 100%;
+      color: var(--dark-color);
+      @include _767-max {
+        font-size: 14px;
+      }
+
+      &::placeholder {
+        color: rgba(6, 33, 38, 0.5);
+      }
+    }
+
+    // .contact-form__actions
+    &__actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3.3rem;
+      @include _767-max {
+        gap: 33px;
+      }
+    }
+
+    // .contact-form__btn
+    &__btn {
+    }
+
+    // .contact-form__social
+    &__social {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      @include _767-max {
+        gap: 16px;
+      }
+    }
+
+    // .contact-form__social-link
+    &__social-link {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: rgba(6, 33, 38, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s ease;
+      @include _767-max {
+        width: 50px;
+        height: 50px;
+      }
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+        @include _767-max {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      @media (hover:hover) {
+        &:hover {
+          background: rgba(6, 33, 38, 0.2);
+        }
+    }
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.filter {
+    background: #fff;
+    padding: 7rem 0;
+    position: relative;
+    z-index: 3;
+    &__title {
+        font-size: 4.8rem;
+        font-weight: 600;
+        line-height: 112.5%;
+        color: #062126;
+        @include _767-max {
+            font-size: 24px;
+        }
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem;
+    }
+    &__subtitle {
+        font-size: 1.4rem;
+        line-height: 112.5%;
+        color: #062126;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 1.2rem;
+        min-height: 14px;
+        @include _767-max {
+            font-size: 14px;
+        }
+        img {
+            width: 1.8rem;
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.5rem;
+        width: 100%;
+        @include _767-max {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &:nth-of-type(n + 2) {
+            max-width: 24.5rem;
+            @include _767-max {
+                max-width: 100%;
+            }
+        }
+    }
+    &__select {
+        position: relative;
+        cursor: pointer;
+        position: relative;
+        &.active {
+            z-index: 4;
+            .filter__option {
+                opacity: 1;
+                pointer-events: all;
+            }
+            .filter__select {
+                &-icon {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+            .filter__select-val {
+                border: 1px solid #24a5e0;
+            }
+        }
+        &-icon {
+            position: absolute;
+            right: 1.8rem;
+            z-index: 3;
+            top: 50%;
+            transform-origin: center;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            svg {
+                width: 1.2rem;
+            }
+        }
+        &-val {
+            padding: 1.7rem 3.2rem 1.7rem 2.2rem;
+            border: 1px solid rgb(0, 0, 0, 0.05);
+            border-radius: 1rem;
+            color: rgb(6, 33, 38, 0.5);
+            font-size: 1.4rem;
+            position: relative;
+            z-index: 3;
+            background: #fcfcfc;
+            @include _767-max {
+                font-size: 14px;
+            }
+        }
+    }
+    &__option {
+        position: absolute;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
+        bottom: 2rem;
+        transform: translateY(100%);
+        width: 100%;
+        height: max-content;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        padding-top: 2rem;
+        max-height: 32rem;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        &-val {
+            padding: 1.7rem 3.4rem 1.7rem 2.2rem;
+            transition: background 0.4s ease;
+            color: rgb(6, 33, 38, 0.5);
+            font-size: 1.4rem;
+            cursor: pointer;
+            position: relative;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            @include _767-max {
+                font-size: 14px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 2.2rem;
+                right: 2.2rem;
+                height: 1px;
+                background: rgba(6, 33, 38, 0.1);
+                transform: translateY(50%);
+            }
+            &:last-of-type {
+                &::before {
+                    display: none;
+                }
+            }
+            @media (hover: hover) {
+                &:hover {
+                    background: rgba(0, 0, 0, 0.1);
+                    border-left: 1px solid rgb(6, 33, 38, 0.05);
+                    border-right: 1px solid rgb(6, 33, 38, 0.05);
+                }
+            }
+            &::after {
+                content: "";
+                background: url("../img/icons/check.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                right: 2.2rem;
+                top: 50%;
+                width: 1.3rem;
+                height: 1.3rem;
+                transform: translateY(-50%);
+                opacity: 0;
+                pointer-events: none;
+            }
+            &.active {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

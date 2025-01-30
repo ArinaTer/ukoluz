@@ -1,0 +1,212 @@
+.recall {
+  margin-top: 3.2rem;
+  padding-top: 3.2rem;
+  border-top: 0.1rem solid rgba(6, 33, 38, 0.1);
+  @include _576-max {
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(6, 33, 38, 0.1);
+  }
+
+  // .recall__top
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    @include _576-max {
+      flex-direction: column;
+      gap: 64px;
+    }
+  }
+
+  // .recall__title
+  &__title {
+  }
+
+  // .recall__right
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include _576-max {
+      gap: 15px;
+    }
+  }
+
+  // .recall__right-top
+  &__right-top {
+    display: flex;
+    gap: 1.5rem;
+    @include _576-max {
+      gap: 15px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: rgba(6, 33, 38, 0.5);
+      @include _576-max {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // .recall__right-bot
+  &__right-bot {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 112%;
+    color: rgba(6, 33, 38, 0.3);
+    @include _576-max {
+      font-size: 16px;
+    }
+  }
+
+  // .recall__rating
+  &__rating {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row-reverse;
+    @include _576-max {
+      gap: 5px;
+    }
+    input {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+    }
+    & > input:not(:checked) ~ label > svg path {
+      fill: var(--dark-color);
+      opacity: 0.1;
+    }
+    & > input:checked ~ label > svg path {
+      fill: #ffc534;
+      opacity: 1;
+    }
+  }
+
+  // .recall__form
+  &__form {
+    width: 100%;
+    margin-top: 3.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include _576-max {
+      margin-top: 32px;
+      gap: 16px;
+    }
+  }
+  // .recall__input-wrapper
+
+  &__input-wrapper {
+    width: 100%;
+    position: relative;
+    span {
+      position: absolute;
+      left: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 200ms;
+      @include _576-max {
+        left: 20px;
+      }
+      svg {
+        width: 2rem;
+        height: 2rem;
+        @include _576-max {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  // .recall__input
+  &__input {
+    max-width: 45.6rem;
+    width: 100%;
+    background: #fcfcfc;
+    padding: 1.5rem 0 1.5rem 5.2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 112%;
+    color: var(--dark-color);
+
+    @include _576-max {
+      max-width: 100%;
+      border-radius: 10px;
+      padding: 17px 0 17px 52px;
+      font-size: 14px;
+    }
+    &::placeholder {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 112%;
+      color: rgba(6, 33, 38, 0.5);
+      transition: all 200ms;
+      @include _576-max {
+        font-size: 14px;
+      }
+    }
+
+    &:focus {
+      border: 0.1rem solid rgba(0, 0, 0, 0.05);
+      @include _576-max {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  // .recall__textarea
+  &__textarea {
+    background: #fcfcfc;
+    border: 0.1rem solid rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    padding: 1.7rem 2rem;
+    width: 100%;
+    height: 20.5rem;
+    resize: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 132%;
+    color: var(--dark-color);
+    @include _576-max {
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 17px 20px;
+      height: 176px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    &::placeholder {
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 130%;
+      color: rgba(6, 33, 38, 0.5);
+      transition: all 200ms;
+      @include _576-max {
+        font-size: 14px;
+      }
+    }
+    &:focus {
+      border: 0.1rem solid rgba(0, 0, 0, 0.05);
+      @include _576-max {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+  
+  // .recall__btn
+  &__btn {
+    width: max-content;
+    margin: 0 auto;
+  }
+}

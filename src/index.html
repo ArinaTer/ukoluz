@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+@@include('html/components/head.html',{ "title":"Ukol" })
+
+<body class="home-page">
+    @@include('html/components/preloader.html')
+    @@include('html/components/header.html')
+
+    <main class="main">
+        @@include('html/home/intro.html')
+        @@include('html/home/services.html')
+        @@include('html/home/choose-experts.html')
+        @@include('html/home/faq.html')
+        @@include('html/home/contact.html')
+    </main>
+
+    @@include('html/components/footer.html')
+    @@include('html/modals/modal.html')
+</body>
+
+<script src="./js/app.min.js"></script>
+
+</html>
