@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta lang="ru">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0,shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Специалисты</title>
+    <meta name="apple-mobile-web-app-title" content="Web Site Name" />
+    <meta name="application-name" content="Web Site Name" />
+    <meta name="msapplication-TileColor" content="#1e1e1e" />
+    
+    <meta name="theme-color" content="#000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+</head>
+
+<body class="specialists-page">
+    <div class="preloader remove">
+    <div class="preloader-inner">
+        <div class="preloader-circle">
+
+        </div>
+        <div class="preloader-text">
+            Минутку
+        </div>
+    </div>
+</div>
+    <header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="/" class="header__logo">
+                <img src="img/logo/ukol.svg" alt="">
+            </a>
+            <button type="button" class="header__burger">
+                <div class="header__burger-wrapper">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <nav class="header__nav">
+                
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="/#intro" class="header__nav-link active">О нас</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/#services" class="header__nav-link">Услуги</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/#chooseExperts" class="header__nav-link">Специалисты</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="/#faq" class="header__nav-link">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="header__btn blue-btn button">
+                <span>Телеграм бот</span>
+            </a>
+            
+        </div>
+    </div>
+    <div class="header__bg-mobile"></div>
+</header>
+
+    <main class="main">
+        <div class="banner">
+    <div class="banner__img">
+        <img src="../../img/specialists/banner.jpg" alt="">
+    </div>
+    <h1 class="banner__title">Специалисты</h1>
+</div>
+        <div class="filter">
+    <div class="filter__inner container">
+        <h2 class="filter__title">Фильтр</h2>
+        <form class="filter__form">
+            <input type="text" hidden class="">
+            <input type="text" hidden class="">
+            <input type="text" hidden class="">
+            <div class="filter__wrap">
+                <span class="filter__subtitle">Услуги</span>
+                <div class="filter__select">
+                    <div class="filter__select-val">Все</div>
+                    <div class="filter__select-icon">
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.00018 4.94759L10.2934 0.317167C10.3862 0.216955 10.4964 0.137449 10.6176 0.0831871C10.7389 0.0289256 10.8688 0.000971434 11.0001 0.000921313C11.1314 0.000871193 11.2613 0.0287258 11.3826 0.0828947C11.5039 0.137064 11.6141 0.216486 11.707 0.316627C11.7998 0.416768 11.8735 0.535668 11.9238 0.666536C11.9741 0.797403 12 0.937677 12 1.07935C12 1.22102 11.9742 1.36131 11.924 1.49222C11.8739 1.62313 11.8003 1.74208 11.7075 1.84229L6.00018 8L0.292865 1.84229C0.105347 1.63991 5.90018e-08 1.36541 4.66338e-08 1.07919C3.42657e-08 0.792972 0.105347 0.518476 0.292865 0.316088C0.480383 0.113701 0.734713 4.98114e-07 0.999904 4.86388e-07C1.26509 4.74662e-07 1.51943 0.113701 1.70694 0.316088L6.00018 4.94759Z"
+                                fill="#062126" />
+                        </svg>
+                    </div>
+                    <ul class="filter__option">
+                        <li class="filter__option-val active">Все</li>
+                        <li class="filter__option-val">Укол внутримышечно</li>
+                        <li class="filter__option-val">Укол внутривенно</li>
+                        <li class="filter__option-val">Укол подкожные</li>
+                        <li class="filter__option-val">Укол около пупка</li>
+                        <li class="filter__option-val">Капельницы</li>
+                        <li class="filter__option-val">Перевязка Ран</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="filter__wrap">
+                <span class="filter__subtitle">Пол:</span>
+                <div class="filter__select">
+                    <div class="filter__select-val">Любой</div>
+                    <div class="filter__select-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.00018 4.94759L10.2934 0.317167C10.3862 0.216955 10.4964 0.137449 10.6176 0.0831871C10.7389 0.0289256 10.8688 0.000971434 11.0001 0.000921313C11.1314 0.000871193 11.2613 0.0287258 11.3826 0.0828947C11.5039 0.137064 11.6141 0.216486 11.707 0.316627C11.7998 0.416768 11.8735 0.535668 11.9238 0.666536C11.9741 0.797403 12 0.937677 12 1.07935C12 1.22102 11.9742 1.36131 11.924 1.49222C11.8739 1.62313 11.8003 1.74208 11.7075 1.84229L6.00018 8L0.292865 1.84229C0.105347 1.63991 5.90018e-08 1.36541 4.66338e-08 1.07919C3.42657e-08 0.792972 0.105347 0.518476 0.292865 0.316088C0.480383 0.113701 0.734713 4.98114e-07 0.999904 4.86388e-07C1.26509 4.74662e-07 1.51943 0.113701 1.70694 0.316088L6.00018 4.94759Z"
+                                fill="#062126" />
+                        </svg>
+                    </div>
+                    <ul class="filter__option">
+                        <li class="filter__option-val active">Любой</li>
+                        <li class="filter__option-val">Муж.</li>
+                        <li class="filter__option-val">Жен.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter__wrap">
+                <span class="filter__subtitle"><img src="../../img/icons/sort.svg" alt="">Сортировка</span>
+                <div class="filter__select">
+                    <div class="filter__select-val">По умолчанию</div>
+                    <div class="filter__select-icon"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.00018 4.94759L10.2934 0.317167C10.3862 0.216955 10.4964 0.137449 10.6176 0.0831871C10.7389 0.0289256 10.8688 0.000971434 11.0001 0.000921313C11.1314 0.000871193 11.2613 0.0287258 11.3826 0.0828947C11.5039 0.137064 11.6141 0.216486 11.707 0.316627C11.7998 0.416768 11.8735 0.535668 11.9238 0.666536C11.9741 0.797403 12 0.937677 12 1.07935C12 1.22102 11.9742 1.36131 11.924 1.49222C11.8739 1.62313 11.8003 1.74208 11.7075 1.84229L6.00018 8L0.292865 1.84229C0.105347 1.63991 5.90018e-08 1.36541 4.66338e-08 1.07919C3.42657e-08 0.792972 0.105347 0.518476 0.292865 0.316088C0.480383 0.113701 0.734713 4.98114e-07 0.999904 4.86388e-07C1.26509 4.74662e-07 1.51943 0.113701 1.70694 0.316088L6.00018 4.94759Z"
+                                fill="#062126" />
+                        </svg>
+                    </div>
+                    <ul class="filter__option">
+                        <li class="filter__option-val active">По умолчанию</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="blue-btn button filter__btn" type="submit">
+    <span>
+        Применить
+    </span>
+    <img src="img/icons/arrow-right.svg" alt="arrow-right">
+</button>
+        </form>
+    </div>
+</div>
+        <div class="cards container">
+    <div class="cards__item">
+        <div class="cards__img"><img src="img/doctors/doc1.jpg" alt=""></div>
+        <div class="cards__info">
+            <h2 class="cards__title">Джамиля Халибаева</h2>
+            <div class="cards__rating ">
+                <p class="cards__rating-text">Рейтинг</p>
+                <div class="rating">
+                    <img src="img/icons/star.svg" alt="">
+                    <p>4.5 <span>/5</span></p>
+                </div>
+
+            </div>
+            <p class="cards__prof">Домохозяйка</p>
+            <div class="cards__services">
+                <div class="cards__services-text">Оказываемые услуги</div>
+                <ul class="cards__services-list">
+                    <li class="cards__services-item">Уколы внутримышечно</li>
+                    <li class="cards__services-item">Перевязка ран</li>
+                    <li class="cards__services-item">Снятие швов</li>
+                    <li class="cards__services-item">Замер давления</li>
+                    <li class="cards__services-item"><span>и еще +3</span></li>
+                </ul>
+            </div>
+            <div class="cards__exp">
+                <p class="cards__exp-text">Стаж работы</p>
+                <div class="exp">
+                    <img src="img/icons/calendar.svg" alt="">
+                    <p>4 года</p>
+                </div>
+            </div>
+            <a href="/single.html" class="cards__btn blue-btn button">
+                <span>
+                    Подробнее
+                </span>
+                <img src="img/icons/arrow-right.svg" alt="arrow-right">
+            </a>
+        </div>
+    </div>
+    <div class="cards__item">
+        <div class="cards__img"><img src="img/doctors/doc2.jpg" alt=""></div>
+        <div class="cards__info">
+            <h2 class="cards__title">Джамиля Халибаева</h2>
+            <div class="cards__rating ">
+                <p class="cards__rating-text">Рейтинг</p>
+                <div class="rating">
+                    <img src="img/icons/star.svg" alt="">
+                    <p>4.5 <span>/5</span></p>
+                </div>
+
+            </div>
+            <p class="cards__prof">Домохозяйка</p>
+            <div class="cards__services">
+                <div class="cards__services-text">Оказываемые услуги</div>
+                <ul class="cards__services-list">
+                    <li class="cards__services-item">Уколы внутримышечно</li>
+                    <li class="cards__services-item">Перевязка ран</li>
+                    <li class="cards__services-item">Снятие швов</li>
+                    <li class="cards__services-item">Замер давления</li>
+                    <li class="cards__services-item"><span>и еще +3</span></li>
+                </ul>
+            </div>
+            <div class="cards__exp">
+                <p class="cards__exp-text">Стаж работы</p>
+                <div class="exp">
+                    <img src="img/icons/calendar.svg" alt="">
+                    <p>4 года</p>
+                </div>
+            </div>
+            <a href="/single.html" class="cards__btn blue-btn button">
+                <span>
+                    Подробнее
+                </span>
+                <img src="img/icons/arrow-right.svg" alt="arrow-right">
+            </a>
+        </div>
+    </div>
+    <div class="cards__item">
+        <div class="cards__img"><img src="img/doctors/doc3.jpg" alt=""></div>
+        <div class="cards__info">
+            <h2 class="cards__title">Джамиля Халибаева</h2>
+            <div class="cards__rating ">
+                <p class="cards__rating-text">Рейтинг</p>
+                <div class="rating">
+                    <img src="img/icons/star.svg" alt="">
+                    <p>4.5 <span>/5</span></p>
+                </div>
+
+            </div>
+            <p class="cards__prof">Домохозяйка</p>
+            <div class="cards__services">
+                <div class="cards__services-text">Оказываемые услуги</div>
+                <ul class="cards__services-list">
+                    <li class="cards__services-item">Уколы внутримышечно</li>
+                    <li class="cards__services-item">Перевязка ран</li>
+                    <li class="cards__services-item">Снятие швов</li>
+                    <li class="cards__services-item">Замер давления</li>
+                    <li class="cards__services-item"><span>и еще +3</span></li>
+                </ul>
+            </div>
+            <div class="cards__exp">
+                <p class="cards__exp-text">Стаж работы</p>
+                <div class="exp">
+                    <img src="img/icons/calendar.svg" alt="">
+                    <p>4 года</p>
+                </div>
+            </div>
+            <a href="/single.html" class="cards__btn blue-btn button">
+                <span>
+                    Подробнее
+                </span>
+                <img src="img/icons/arrow-right.svg" alt="arrow-right">
+            </a>
+        </div>
+    </div>
+    <div class="cards__item">
+        <div class="cards__img"><img src="img/doctors/doc4.jpg" alt=""></div>
+        <div class="cards__info">
+            <h2 class="cards__title">Джамиля Халибаева</h2>
+            <div class="cards__rating ">
+                <p class="cards__rating-text">Рейтинг</p>
+                <div class="rating">
+                    <img src="img/icons/star.svg" alt="">
+                    <p>4.5 <span>/5</span></p>
+                </div>
+
+            </div>
+            <p class="cards__prof">Домохозяйка</p>
+            <div class="cards__services">
+                <div class="cards__services-text">Оказываемые услуги</div>
+                <ul class="cards__services-list">
+                    <li class="cards__services-item">Уколы внутримышечно</li>
+                    <li class="cards__services-item">Перевязка ран</li>
+                    <li class="cards__services-item">Снятие швов</li>
+                    <li class="cards__services-item">Замер давления</li>
+                    <li class="cards__services-item"><span>и еще +3</span></li>
+                </ul>
+            </div>
+            <div class="cards__exp">
+                <p class="cards__exp-text">Стаж работы</p>
+                <div class="exp">
+                    <img src="img/icons/calendar.svg" alt="">
+                    <p>4 года</p>
+                </div>
+            </div>
+            <a href="/single.html" class="cards__btn blue-btn button">
+                <span>
+                    Подробнее
+                </span>
+                <img src="img/icons/arrow-right.svg" alt="arrow-right">
+            </a>
+        </div>
+    </div>
+</div>
+        <div class="pagination">
+    <div class="pagination__wrap">
+        <button class="pagination__btn pagination__btn-prev"><img src="img/icons/arrow-right-wide.svg" alt=""></button>
+        <ul class="pagination__list">
+            <li class="pagination__list-item active">1</li>
+            <li class="pagination__list-item">2</li>
+            <li class="pagination__list-item">3</li>
+            <li class="pagination__list-item">4</li>
+            <li class="pagination__list-item">5</li>
+            <li class="pagination__list-item"><img src="img/icons/dots.svg" alt=""></li>
+            <li class="pagination__list-item">50</li>
+        </ul>
+        <button class="pagination__btn pagination__btn-next"><img src="img/icons/arrow-right-wide.svg" alt=""></button>
+    </div>
+</div>
+        
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <a href="/" class="footer__logo">
+                <img src="img/logo/ukol.svg" alt="">
+            </a>
+            <div class="footer__nav">
+                <a href="/#intro" class="footer__link">О нас</a>
+                <a href="/#services" class="footer__link">Услуги</a>
+                <a href="/#chooseExperts" class="footer__link">Специалисты</a>
+                <a href="/#faq" class="footer__link">FAQ</a>
+                <a href="/#contact" class="footer__link">Контакты</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                © 2025 ukol.uz, Все права защищены
+            </div>
+            <div class="footer__policy">
+                <a href="#" class="footer__policy-link">Политика конфиденциальности</a>
+                <a href="#" class="footer__policy-link">Условия обслуживания</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script src="./js/app.min.js"></script>
+
+</html>
