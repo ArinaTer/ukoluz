@@ -254,7 +254,7 @@
   // .left-item__text
 
   &__text {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.6rem;
     color: rgba(6, 33, 38, 0.5);
     @include _576-max {
@@ -326,7 +326,7 @@
     border-radius: 3rem 3rem 0 0;
     background: rgba(36, 165, 224, 0.5);
     p {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.6rem;
       color: #1c7fad;
       @include _576-max {
@@ -389,7 +389,7 @@
   // .info-services__right
 
   &__right {
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 .info-districts {
@@ -411,7 +411,7 @@
       gap: 8px;
     }
     p {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.6rem;
       color: #519c3b;
       @include _576-max {
