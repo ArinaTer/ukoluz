@@ -179,7 +179,7 @@ body * {
 .mini-title {
   color: var(--dark-color);
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 112%;
 }
 
@@ -274,7 +274,7 @@ body * {
 }
 
 .preloader-text {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.4rem;
   line-height: 112%;
   color: var(--dark-color);
@@ -808,7 +808,7 @@ body * {
 
 .footer__link {
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.8rem;
   line-height: 173%;
   -webkit-transition: color 0.2s ease;
@@ -1099,7 +1099,7 @@ body * {
 }
 
 .intro__info-item {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 146%;
   color: var(--dark-color);
@@ -1518,7 +1518,7 @@ body * {
 }
 
 .contact__email-text {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 173%;
   text-decoration-line: underline;
@@ -1661,7 +1661,7 @@ body * {
 
 .filter__title {
   font-size: 4.8rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 112.5%;
   color: #062126;
 }
@@ -1927,7 +1927,7 @@ body * {
 .cards__title {
   font-size: 2.4rem;
   line-height: 112.5%;
-  font-weight: 600;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -2059,7 +2059,7 @@ body * {
 .banner__title {
   font-size: 4.8rem;
   line-height: 112.5%;
-  font-weight: 600;
+  font-weight: 500;
   padding: 3.2rem;
   background: rgba(6, 33, 38, 0.7);
   width: -webkit-max-content;
@@ -2268,7 +2268,7 @@ body * {
 }
 
 .left-item__text {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   color: rgba(6, 33, 38, 0.5);
 }
@@ -2310,7 +2310,7 @@ body * {
 }
 
 .info-services__title p {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   color: #1c7fad;
 }
@@ -2348,7 +2348,7 @@ body * {
 }
 
 .info-services__right {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .info-districts {
@@ -2369,7 +2369,7 @@ body * {
 }
 
 .info-districts__title p {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   color: #519c3b;
 }
@@ -2450,7 +2450,7 @@ body * {
 }
 
 .reviews__card-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   color: rgba(6, 33, 38, 0.8);
 }
