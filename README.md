@@ -1,51 +1,53 @@
 Ukoluz
 
-Ukoluz is a website developed for home healthcare services, providing medical care directly at patients' homes. The site is designed with a clean, simple interface, making it easy for users to access a range of healthcare services and information for home-based medical assistance.
+Ukoluz — это сайт, предназначенный для предоставления услуг домашнего здравоохранения, предлагающий медицинскую помощь непосредственно на дому у пациентов. Сайт выполнен с простым и чистым интерфейсом, что облегчает пользователям доступ к различным медицинским услугам и информации о помощи на дому.
 
-📌 About the Project
-Ukoluz is a user-friendly website aimed at connecting patients with home healthcare professionals. The website is built with HTML and CSS, offering an intuitive layout that makes it easy for users to find information on services, contact healthcare providers, and request at-home medical care.
+📌 О проекте
+Ukoluz — это удобный сайт, ориентированный на соединение пациентов с профессионалами домашнего здравоохранения. Сайт разработан с использованием HTML и CSS и имеет интуитивно понятный макет, что облегчает поиск информации о услугах, контактирование с поставщиками медицинской помощи и запрос медицинской помощи на дому.
 
-🎯 Key Features
+🎯 Ключевые особенности
 
-Simple, responsive design for easy navigation
+Простой и адаптивный дизайн для удобной навигации
 
-Sections dedicated to the services offered and healthcare team
+Разделы, посвященные предоставляемым услугам и медицинской команде
 
-Easy-to-find contact information
+Легко доступная контактная информация
 
-Fully compatible with both mobile and desktop browsers
+Полная совместимость с мобильными и десктопными браузерами
 
-Clear and user-friendly interface for all ages
+Чистый и удобный интерфейс для всех возрастов
 
-🛠️ Technologies Used
+🛠️ Используемые технологии
 
-Built with HTML and CSS
+Разработано с использованием HTML и CSS
 
-Responsive layout for seamless browsing across devices
+Адаптивный макет для удобного просмотра на всех устройствах
 
-Clean and straightforward design for a professional appearance
+Чистый и понятный дизайн для профессионального внешнего вида
 
-📲 How to Use
-Open the website in any modern browser.
-Navigate through the sections to learn about the medical services offered, get in touch with the healthcare team, or request assistance.
 
-📥 How to Download the Repository
+📥 Как скачать репозиторий
 
-Clone the repository from the dev branch:
+Клонируйте репозиторий с ветки dev:
 
 git clone https://github.com/ArinaTer/ukoluz.git
 
+📦 Установка зависимостей
 
-📦 Install Dependencies Ensure you have Node.js installed, then run:
+Убедитесь, что у вас установлен Node.js, затем выполните:
 
 npm install
 
-🚀 Running the Project Locally Start the development server:
+🚀 Запуск проекта локально
+
+Запустите сервер разработки:
 
 npm run dev
 
-Open your browser and visit: http://localhost:3000
+Откройте браузер и посетите: http://localhost:3000
 
-🏗️ Creating a Production Build To generate a production-ready build:
+🏗️ Создание production-версии
+
+Для генерации сборки для продакшн:
 
 npm run build
