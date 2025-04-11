@@ -34,9 +34,6 @@ Clone the repository to your local machine:
 
 git clone https://github.com/ArinaTer/ukoluz.git
 
-Navigate to the project directory:
-
-cd ukoluz
 
 📦 Install Dependencies Ensure you have Node.js installed, then run:
 
